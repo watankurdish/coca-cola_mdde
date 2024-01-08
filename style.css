@@ -1,0 +1,53 @@
+* {margin: 0; padding: 0;}
+main {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 110px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+.banka-block {
+    display: flex;
+    width: 244px;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.banka {
+    width: 300px;
+    height: 500px;
+    position: relative;
+    z-index: 2;
+}
+.etickets {
+    width: 1000px;
+    height: 424.4px;
+    margin-top: 7px;
+    transform: translateX(-250px);
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes move {
+    100% {
+        transform: translateX(-802px);
+    }
+}
+button {
+    font-size: 50px;
+    padding: 5px 10px;
+    border: 0;
+    height: 70px;
+    text-transform: uppercase;
+    background-color: blueviolet;
+    color: white;
+}
+
+button:active {
+    background-color: yellowgreen;
+}
